@@ -1,7 +1,12 @@
 package org.team.data;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import org.team.TeamPref;
 
 public class TeamPreferenceData {
 	
@@ -34,4 +39,34 @@ public class TeamPreferenceData {
 		put(PAIN_KILLERS, "1,4,3.2,2,5");
 		put(NEW_TEAM, "5,2,3,-1,4");
 	}};
+	
+	public static List<TeamPref> getPREF1 () {
+		List<TeamPref> prefs = new ArrayList<TeamPref>();
+		prefs.add(new TeamPref(A_TEAM, Arrays.asList("1","3","2","4","5")));
+		prefs.add(new TeamPref(X_MEN, Arrays.asList("2","3","4","1","5")));
+		prefs.add(new TeamPref(SCRUM_LORDS, Arrays.asList("1","2","3","4","5")));
+		prefs.add(new TeamPref(PAIN_KILLERS, Arrays.asList("3","2","1","4","5")));
+		prefs.add(new TeamPref(NEW_TEAM, Arrays.asList("1","2","3","4","5")));
+		return prefs;
+	}
+	
+	public static List<TeamPref> getPREF2 () {
+		List<TeamPref> prefs = new ArrayList<TeamPref>();
+		prefs.add(new TeamPref(A_TEAM, Arrays.asList("1","3","2","4","5")));
+		prefs.add(new TeamPref(X_MEN, Arrays.asList("5","4","3","2","1")));
+		prefs.add(new TeamPref(SCRUM_LORDS, Arrays.asList("3","2","1","5","4")));
+		prefs.add(new TeamPref(PAIN_KILLERS, Arrays.asList("1","4","3","2","5")));
+		prefs.add(new TeamPref(NEW_TEAM, Arrays.asList("5","2","3","1","4")));
+		return prefs;
+	}
+
+	public static List<TeamPref> getPREF3 () {
+		List<TeamPref> prefs = new ArrayList<TeamPref>();
+		prefs.add(new TeamPref(A_TEAM, Arrays.asList("1","3","2","4","5")));
+		prefs.add(new TeamPref(X_MEN, Arrays.asList("5","4","3","2","5")));
+		prefs.add(new TeamPref(SCRUM_LORDS, Arrays.asList("7","2","1","5","4")));
+		prefs.add(new TeamPref(PAIN_KILLERS, Arrays.asList("1","4","3.2","2","5")));
+		prefs.add(new TeamPref(NEW_TEAM, Arrays.asList("5","2","3","-1","4")));
+		return prefs;
+	}
 }
